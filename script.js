@@ -50,8 +50,8 @@ console.log(studentClone); // Log cloned object with new property
 
 // Merge two arrays using spread operator 
 let newCourses = ["Technical Writing", "Operating Systems"]; // New array of courses
-let allCourses = [...student.courses, ...newCourses]; // Merge arrays using spread operator
-console.log(allCourses); // Console log merged array of courses
+let mergeCourses = [...student.courses, ...newCourses]; // Merge arrays using spread operator
+console.log(mergeCourses); // Console log merged array of courses
 
 // Add method to student object to dynamically add a new course to the courses array
 student.addCourse = function(course) {
@@ -59,3 +59,10 @@ student.addCourse = function(course) {
     console.log(this.name + ' has added ' + course + ' to their courses.'); // Log confirmation of course added
 };
 student.addCourse("Software Engineering"); // Call addCourse method which adds Software Engineering to courses array 
+console.log(student.courses); // Log updated courses array
+
+// Add method to calculate and return total number of courses
+student.allCourses = function() {
+    return this.courses.length; // Return length of courses array
+}
+console.log(student.allCourses()); // Log total number of courses
