@@ -47,3 +47,8 @@ console.log(studentClone); // Log cloned student object
 
 studentClone = {...studentClone, graduationYear: 2025}; // Add new property to cloned object
 console.log(studentClone); // Log cloned object with new property
+
+// Merge two arrays using spread operator 
+let newCourses = ["Technical Writing", "Operating Systems"]; // New array of courses
+let allCourses = [...student.courses, ...newCourses]; // Merge arrays using spread operator
+console.log(allCourses); // Console log merged array of courses
