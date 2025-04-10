@@ -40,3 +40,7 @@ let score = [80, 90, 95, 100];
 let [firstScore, secondScore] = score;
 console.log(firstScore); // Output first score
 console.log(secondScore); // Output second score   
+
+// Clone student object using spread operator
+let studentClone = {...student};
+console.log(studentClone); // Log cloned student object 
