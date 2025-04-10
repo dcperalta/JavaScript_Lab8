@@ -26,3 +26,11 @@ console.log(jsonObject); // Log JSON object
 console.log(jsonObject.name); // Log name property from JSON object
 console.log(jsonObject.age); // Log age property from JSON object
 console.log(jsonObject.courses); // Log courses property from JSON object
+
+// Destructuring to extract name and courses properties from student object
+let {name, courses} = student;
+console.log(name); // Output name property  
+console.log(courses[0]); // Log first course -> JavaScript
+console.log(courses[1]); // Log second course -> Web Programming
+console.log(courses[2]); // Log third course -> Algorithms
+console.log(courses[3]); // Log fourth course -> Database Management
