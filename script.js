@@ -34,3 +34,9 @@ console.log(courses[0]); // Log first course -> JavaScript
 console.log(courses[1]); // Log second course -> Web Programming
 console.log(courses[2]); // Log third course -> Algorithms
 console.log(courses[3]); // Log fourth course -> Database Management
+
+// Create an array of score and destructure the first two scores from the array and log them
+let score = [80, 90, 95, 100];
+let [firstScore, secondScore] = score;
+console.log(firstScore); // Output first score
+console.log(secondScore); // Output second score   
