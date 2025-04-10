@@ -44,3 +44,6 @@ console.log(secondScore); // Output second score
 // Clone student object using spread operator
 let studentClone = {...student};
 console.log(studentClone); // Log cloned student object 
+
+studentClone = {...studentClone, graduationYear: 2025}; // Add new property to cloned object
+console.log(studentClone); // Log cloned object with new property
