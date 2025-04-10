@@ -19,3 +19,10 @@ student.enrolment(); // Call enrolment method
 // Convert student object to JSON string
 let jsonString = JSON.stringify(student);
 console.log(jsonString); // Log JSON string
+
+// Convert JSON string back to object
+let jsonObject = JSON.parse(jsonString);
+console.log(jsonObject); // Log JSON object
+console.log(jsonObject.name); // Log name property from JSON object
+console.log(jsonObject.age); // Log age property from JSON object
+console.log(jsonObject.courses); // Log courses property from JSON object
