@@ -15,3 +15,7 @@ const student = {
 console.log(student.name + ' is ' + student.age + ' years old.'); // Log name and age properties
 student.info(); // Call info method
 student.enrolment(); // Call enrolment method
+
+// Convert student object to JSON string
+let jsonString = JSON.stringify(student);
+console.log(jsonString); // Log JSON string
